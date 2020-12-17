@@ -1,0 +1,9 @@
+#meeting notes
+
+12/16/2020-------------------------------------------------------------------------
+
+have a color pallet from Ricardo.
+Start to use GitKraken for managment.
+
+Ricardo's task --- draw up some initial images
+Justin's task --- code up the initial website locally. try and get the API working. 
