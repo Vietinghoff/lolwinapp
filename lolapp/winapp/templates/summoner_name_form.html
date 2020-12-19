@@ -1,0 +1,21 @@
+{% block title %}Find your win condition{% endblock title %}
+
+{% block content %}
+<h1>Find your win condition</h1>
+
+{% if submitted %}
+    <p class="success">
+        Your summoner name was submitted successfully. Thank you.
+    </p>
+
+{% else %}
+    <form action="" method="post" novalidate>
+        {{form}}
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    {% csrf_token %}
+    </form>
+{% endif %}
+{% endblock content %}
