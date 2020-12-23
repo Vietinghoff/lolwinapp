@@ -2,10 +2,18 @@
 
 {% block content %}
 <h1>Find your win condition</h1>
-
+<!-- checks if the form was submitted and displays a nice message, otherwise it sends you back to the form again. -->
 {% if submitted %}
     <p class="success">
-        Your summoner name was submitted successfully. Thank you.
+        <ul>
+                <li>{{cd.summoner_name}}</li>
+                <li>{{cd.region_name}}</li>
+            {% for name in champ %}
+                <li>{{name}}</li>
+            {% endfor %}
+                
+                
+        </ul>
     </p>
 
 {% else %}
